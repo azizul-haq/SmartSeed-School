@@ -16,4 +16,60 @@
 }
 body{
      font-family: "Open Sans", sans-serif;
+     width: 100%;
+     overflow-x: hidden;
+}
+
+/* header section  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    color: var(--primary-text-color);
+    padding: 15px;
+    background-color: var(--background-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header >*{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10px; 
+}
+nav > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+nav ul li{
+    padding: 0 10px;
+
+}
+nav ul li a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+
+}
+nav ul li a:hover, .menu-btns a:hover{
+    color: var(--secondary-color);
+}
+.menu-btns a{
+    padding: 0 10px;
+}
+.menu-btns .signup-btn{
+    margin-left: 10px;
+    border: 1px solid var(--primary-color);
+    padding: 5px 12px;
+    border-radius: 8px;
+    transition: var(--background-color) 0.3s ease,
+                color 0.3s ease;
+}
+.menu-btns .signup-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--background-color);
 }
